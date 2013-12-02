@@ -44,7 +44,7 @@ $(document).ready(function () {
             $('form').submit();
             item = verify($('#input').val());
             if (item) 
-                 $('ul').append('<li class="active">'+ item +'<div class="delete"><span class = "icon">x</span></div><div class = "check"><span class = "icon">---</span></div></li>');
+                 $('ul').append('<li class="active">'+ item +'<div class="delete"><span class = "icon">x</span></div><div class = "check"><span class = "icon">v/</span></div></li>');
             $('#input').val("");
         };
     });
