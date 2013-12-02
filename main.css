@@ -1,4 +1,5 @@
 body, input {
+	min-width: 500px;
 	background-color: black;
 }
 
@@ -38,21 +39,23 @@ li, input {
 	padding-bottom: 10px;
 }
 
-.top {
-	margin-top: 50px;
-}
+.top {margin-top: 50px;}
 
 .check, .delete {
 	height: 30px; width: 30px;
 	float: right; border: 1px solid green;
-	margin: 7px; line-height: .2; letter-spacing: -5px;
+	margin: 7px; 
 }
-.icon {
-	margin-left: -5px;
 
-}
-.check:hover { color: #9F9; text-shadow: 2px 2px 4px #FFF, -2px -2px 4px #FFF;}
-.delete { margin-right: 15px; line-height: .2}
+.check { letter-spacing: -7px; font-size: 28px; line-height: 18px; }
+.check,  x:-moz-any-link, x:default  { line-height: 25px;  }
+
+.check .icon { margin-left: -8px; }
+.check:hover { color: #9F9; text-shadow: 2px 2px 4px #8F8, -2px -2px 4px #8F8;}
+.delete { margin-right: 15px; line-height: 5px}
+.delete,  x:-moz-any-link, x:default  { line-height: 15px;  }
+
+.delete .icon {	}
 .delete:hover {color: red;	text-shadow: 2px 2px 4px #F88, -2px -2px 4px #F88;}
 
 .inactive {color: #050; text-shadow: none;}
