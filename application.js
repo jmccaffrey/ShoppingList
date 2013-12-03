@@ -39,20 +39,17 @@ $(document).ready(function () {
         $(this).parent().toggleClass('inactive');
     });
 
-    $('#input').keyup(function(event){
+    $('#input').keydown(function(event){
+       console.log("hey: " + event.keyCode)
         if (event.keyCode == 13){
-            $('form').submit();
+           event.preventDefault();
+            
             item = verify($('#input').val());
             if (item) 
                  $('ul').append('<li class="active">'+ item +'<div class="delete"><span class = "icon">x</span></div><div class = "check"><span class = "icon">v/</span></div></li>');
             $('#input').val("");
         };
     });
-
-    $('form').submit(function(e){
-        e.preventDefault();
-    });
-
 
 });
 
